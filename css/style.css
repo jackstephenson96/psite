@@ -33,11 +33,16 @@ height: 250px;
 }
 
 a.skip {
-	position: relative;
-	left: -2000px;
+	position: absolute;
+	left: -1000px;
+	top: auto;
+	width: 1px;
+	height: 1px;	
+	overflow: hidden;
 }
 
 a.skip:focus {
-	left: 10px;
-	border: 2px solid black;
+	position: static;
+	width: auto;
+	height: auto;
 }
