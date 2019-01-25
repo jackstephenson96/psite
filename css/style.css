@@ -43,7 +43,7 @@ a.skip {
 }
 
 a.skip:focus {
-	position: static;
+	left: 500px;
 	width: auto;
 	height: auto;
 }
