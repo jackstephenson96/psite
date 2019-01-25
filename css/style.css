@@ -39,6 +39,7 @@ a.skip {
 	width: 1px;
 	height: 1px;	
 	overflow: hidden;
+	display: block;
 }
 
 a.skip:focus {
