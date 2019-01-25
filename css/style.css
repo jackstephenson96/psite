@@ -1,0 +1,43 @@
+h1 {
+	display: block;
+	color: Blue;
+	font-weight: bold;
+	font-family: Arial;
+}
+
+nav a {
+	color:green;
+	display: inline;
+	position: absolute;
+
+}
+
+.current {
+	border: 1px solid #0006CC;
+	width: 20%;
+}
+
+.navbar {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+
+  border: solid 2px #0006CC;
+}
+
+.picture {
+resize: both;
+overflow: auto;
+width: 250px; /*suggest a min-width & min-height*/
+height: 250px;
+}
+
+a.skip {
+	position: relative;
+	left: -2000px;
+}
+
+a.skip:focus {
+	left: 10px;
+	border: 2px solid black;
+}
