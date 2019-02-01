@@ -5,16 +5,17 @@ h1 {
 	font-family: Arial;
 }
 
-nav a {
+/*nav a {
 	color:green;
 	display: inline;
 	position: absolute;
 
-}
+}*/
 
 .current {
 	border: 1px solid #0006CC;
 	width: 20%;
+	font-style: italic;
 }
 
 .navbar {
@@ -26,10 +27,9 @@ nav a {
 }
 
 .picture {
-resize: both;
-overflow: auto;
-width: 250px; /*suggest a min-width & min-height*/
-height: 250px;
+border: 1px solid;
+width: 20%; /*suggest a min-width & min-height*/
+
 }
 
 a.skip {
