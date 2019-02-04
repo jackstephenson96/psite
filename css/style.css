@@ -2,7 +2,13 @@ h1 {
 	display: block;
 	color: Blue;
 	font-weight: bold;
-	font-family: Arial;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+
+h2 {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
 }
 
 /*nav a {
@@ -26,6 +32,7 @@ ul {
   overflow: hidden;
   position: fixed;
   top: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
   border: solid 2px #0006CC;
 }
@@ -33,8 +40,9 @@ ul {
 .picture {
 border: 1px solid;
 width: 100%; /*suggest a min-width & min-height*/
-
 }
+
+.projectpic 
 
 .pheader {
 	margin-top: 50px
