@@ -11,12 +11,50 @@ h2 {
 
 }
 
-/*nav a {
-	color:green;
-	display: inline;
-	position: absolute;
+.nav-grid-container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 6fr 1fr 1fr 1fr 1fr 2fr;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+}
+.nav-grid-container > a.nav-name {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px 1;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.nav-grid-container > a.nav-item {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px 1;
+  text-decoration: none;
+  justify-items: center;
+  font-size: 30px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.nav-grid-container > a.nav-item:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px 1;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border-bottom: 3px solid blue;
+}
+.nav-grid-container > a.nav-item:active {
+  color: white;
+  background-color: blue;
+  padding: 20px 1;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border-bottom: 3px solid blue;
+}
 
-}*/
+
 
 .current {
 	border: 1px solid #0006CC;
@@ -42,7 +80,6 @@ border: 1px solid;
 width: 100%; /*suggest a min-width & min-height*/
 }
 
-.projectpic 
 
 .pheader {
 	margin-top: 50px
