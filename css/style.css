@@ -16,8 +16,6 @@ h2 {
   grid-gap: 10px;
   grid-template-columns: 6fr 1fr 1fr 1fr 1fr 2fr;
   padding: 10px;
-  position: fixed;
-  top: 0;
 }
 .nav-name {
   color: black;
