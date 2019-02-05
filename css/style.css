@@ -19,7 +19,7 @@ h2 {
   position: fixed;
   top: 0;
 }
-.nav-grid-container > a.nav-name {
+.nav-name {
   color: black;
   background-color: rgba(255, 255, 255, 0.8);
   padding: 20px 1;
@@ -27,16 +27,15 @@ h2 {
   font-size: 30px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-.nav-grid-container > a.nav-item {
+.nav-grid-container > a {
   color: black;
   background-color: rgba(255, 255, 255, 0.8);
   padding: 20px 1;
   text-decoration: none;
-  justify-items: center;
   font-size: 30px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-.nav-grid-container > a.nav-item:hover {
+.nav-grid-container > a:hover {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 20px 1;
   text-decoration: none;
@@ -44,7 +43,7 @@ h2 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   border-bottom: 3px solid blue;
 }
-.nav-grid-container > a.nav-item:active {
+.nav-grid-container > a:active {
   color: white;
   background-color: blue;
   padding: 20px 1;
@@ -53,26 +52,18 @@ h2 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   border-bottom: 3px solid blue;
 }
-
-
-
-.current {
-	border: 1px solid #0006CC;
-	width: 20%;
-	font-style: italic;
+.nav-item-current {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px 1;
+  text-decoration: none;
+  font-size: 30px;
+  border-bottom: 3px solid blue;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
 }
 
 ul {
   list-style-type: none;
-}
-
-.navbar {
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-
-  border: solid 2px #0006CC;
 }
 
 .picture {
