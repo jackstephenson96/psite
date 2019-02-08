@@ -14,6 +14,7 @@ h2 {
 .nav-container {
   display:-webkit-flex;
   display: flex;
+  padding: 10px;
 }
 
 .nav-container > div {
