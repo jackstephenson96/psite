@@ -11,13 +11,16 @@ h2 {
 
 }
 
-.nav-grid-container {
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: 6fr 1fr 1fr 1fr 1fr 2fr;
-  padding: 10px;
+.nav-container {
+  display: flex;
 }
-.nav-name {
+
+.nav-container > div {
+  margin-right: auto;
+}
+
+.nav-container > a {
+  margin:5px;
   color: black;
   background-color: rgba(255, 255, 255, 0.8);
   padding: 20px 1;
@@ -25,15 +28,8 @@ h2 {
   font-size: 30px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-.nav-grid-container > a {
-  color: black;
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 20px 1;
-  text-decoration: none;
-  font-size: 30px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-.nav-grid-container > a:hover {
+
+.nav-container > a:hover {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 20px 1;
   text-decoration: none;
@@ -41,7 +37,7 @@ h2 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   border-bottom: 3px solid blue;
 }
-.nav-grid-container > a:active {
+.nav-container > a:active {
   color: white;
   background-color: blue;
   padding: 20px 1;
