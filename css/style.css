@@ -70,7 +70,9 @@ ul {
 
 .picture {
 border: 1px solid;
-width: 100%; /*suggest a min-width & min-height*/
+width: 100px; 
+height:100px;
+/*suggest a min-width & min-height*/
 }
 
 
