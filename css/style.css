@@ -12,6 +12,7 @@ h2 {
 }
 
 .nav-container {
+  display:-webkit-flex;
   display: flex;
 }
 
