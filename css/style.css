@@ -77,7 +77,7 @@ ul {
 .contact-container {
   display: grid;
   padding: 10px;
-  grid-template-columns: 6fr 2fr 2fr 2fr;
+  grid-template-columns: 4fr 2fr 2fr 2fr 2fr;
 }
 
 .contact-container > div, li, a {
