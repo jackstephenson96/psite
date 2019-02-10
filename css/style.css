@@ -24,7 +24,7 @@ h2 {
   padding: 20px 1;
   text-decoration: none;
   font-size: 30px;
-  font-family: 'Libre Barcode 39 Text', cursive;
+  font-family: 'Libre Barcode 39 Text', cursive !important;
 }
 
 .nav-container > a {
