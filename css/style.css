@@ -110,8 +110,8 @@ div.gallery:hover {
 }
 
 div.gallery img {
-  width: 150px;
-  height: auto;
+  width: 300px;
+  height: 300px;
 }
 
 div.desc {
