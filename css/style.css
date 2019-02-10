@@ -98,7 +98,6 @@ height:200px;
 	margin-top: 50px
 }
 
-
 div.gallery {
   margin: 5px;
   border: 1px solid #ccc;
@@ -112,7 +111,7 @@ div.gallery:hover {
 
 div.gallery img {
   width: auto;
-  height: auto;
+  height: 200px;
 }
 
 div.desc {
