@@ -89,7 +89,7 @@ ul {
 .picture {
 border: 1px solid;
 /*width: 100px; */
-height:100px;
+height:200px;
 /*suggest a min-width & min-height*/
 }
 
@@ -98,9 +98,9 @@ height:100px;
 	margin-top: 50px
 }
 
-.container {
+.travel-container {
 	display: grid;
-	grid-gap: 20px;
+	grid-gap: 10px;
 	grid-template-columns: 1fr 1fr 1fr;
 }
 
