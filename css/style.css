@@ -77,7 +77,7 @@ ul {
 .contact-container {
   display:-webkit-flex;
   display: flex;
-  padding: 10px;
+  padding: 30px;
   flex-direction: row;
 }
 
