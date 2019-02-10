@@ -103,6 +103,7 @@ height:200px;
   display: flex;
   padding: 30px;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 .gallery-container > img {
   width: 300px;
