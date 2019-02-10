@@ -71,19 +71,19 @@ ul {
   display:-webkit-flex;
   display: flex;
   padding: 10px;
-
+  justify-content: center;
 }
 
 .contact-container {
-  display:-webkit-flex;
-  display: flex;
+  display: grid;
   padding: 10px;
+  grid-template-columns: 6fr 2fr 2fr 2fr;
 }
 
-.contact-container > li, a {
+.contact-container > div, li, a {
   color: black;
   background-color: rgba(255, 255, 255, 0.8);
-  padding: 20px;
+  padding: 10px;
   text-decoration: none;
   font-size: 30px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
