@@ -111,7 +111,7 @@ height:200px;
 }
 
 .gallery img {
-  width: 100%;
+  width: auto;
   height: auto;
 }
 
