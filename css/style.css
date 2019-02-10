@@ -24,7 +24,7 @@ h2 {
   padding: 20px 1;
   text-decoration: none;
   font-size: 30px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Libre Barcode 39 Text', cursive;
 }
 
 .nav-container > a {
@@ -84,6 +84,10 @@ ul {
   height:150px;
   width: auto;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.contact-container > p {
+  font-size: 30px;
+  font-family: ;
 }
 
 .picture {
