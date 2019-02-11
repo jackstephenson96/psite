@@ -43,6 +43,7 @@ h2 {
   padding: 20px 1;
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
+  font-size:48;
   border-bottom: 3px solid blue;
 }
 .nav-container > a:active {
