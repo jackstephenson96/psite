@@ -2,12 +2,12 @@ h1 {
 	display: block;
 	color: Blue;
 	font-weight: bold;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: 'Roboto', sans-serif;  
 
 }
 
 h2 {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: 'Roboto', sans-serif;  
 
 }
 
@@ -34,7 +34,7 @@ h2 {
   padding: 20px 1;
   text-decoration: none;
   font-size: 30px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;  
 }
 
 .nav-container > a:hover {
@@ -42,7 +42,7 @@ h2 {
   padding: 20px 1;
   text-decoration: none;
   font-size: 30px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   border-bottom: 3px solid blue;
 }
 .nav-container > a:active {
@@ -51,7 +51,7 @@ h2 {
   padding: 20px 1;
   text-decoration: none;
   font-size: 36px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   border-bottom: 3px solid blue;
 }
 .nav-item-current {
@@ -61,7 +61,7 @@ h2 {
   text-decoration: none;
   font-size: 30px;
   border-bottom: 3px solid blue;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+  font-family: 'Roboto', sans-serif;   
 }
 
 ul {
@@ -85,7 +85,7 @@ ul {
   font-size: 30px;
   height:150px;
   width: auto;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;  
 }
 .contact-container > p {
   font-size: 30px;
