@@ -17,7 +17,7 @@ h2 {
   padding: 10px;
 }
 
-h1.nav-container {
+.nav-container h1 {
   margin-right: auto;
   color: black;
   background-color: rgba(255, 255, 255, 0.8);
@@ -27,7 +27,7 @@ h1.nav-container {
   font-family: 'Libre Barcode 39 Text';
 }
 
-a.nav-container {
+.nav-container a {
   margin:5px;
   color: black;
   background-color: rgba(255, 255, 255, 0.8);
