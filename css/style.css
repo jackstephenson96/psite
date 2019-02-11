@@ -24,6 +24,7 @@ h2 {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 20px 1;
   text-decoration: none;
+  flex-wrap:nowrap;
   font-weight: normal;
   font-family: 'Libre Barcode 39 Text';
 }
