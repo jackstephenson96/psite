@@ -73,6 +73,7 @@ ul {
   display: flex;
   padding: 20px;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .contact-container > a, img {
