@@ -73,6 +73,8 @@ ul {
   display: flex;
   padding: 20px;
   flex-direction: row;
+  justify-content: space-between;
+
 }
 
 .contact-container > a, img {
@@ -80,7 +82,6 @@ ul {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 20px;
   text-decoration: none;
-  justify-content: space-between;
   font-size: 30px;
   height:150px;
   width: auto;
