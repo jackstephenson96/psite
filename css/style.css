@@ -5,10 +5,12 @@
     margin: auto !important;
     padding:auto !important;
   }
-  .nav-container {
-    margin-right:auto !important;
+  */
+  .navlogo {
+    white-space: nowrap;
+    text-align: center;
   }
-*/
+
 } 
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -92,7 +94,6 @@ h2 {
   justify-content: space-evenly;
 }
 .navlogo {
-  white-space:nowrap;
   font-size:36px;
   padding:10px;
   margin-left:15px;
@@ -110,7 +111,7 @@ h2 {
   font-family: 'Roboto', sans-serif;
 }
 
-.navitem-container a:hover{
+.navitem-container a:hover, a:active, a:focus{
   background-color: #eee;
 }
 
