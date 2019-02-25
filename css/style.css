@@ -50,8 +50,8 @@ h2 {
   display:-webkit-flex;
   display: flex;
   flex-direction: column;
-  margin-right: 15px;
   margin-left: auto;
+  margin-right: auto;
   justify-content: space-between;
 }
 .navitem-container {
