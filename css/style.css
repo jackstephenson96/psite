@@ -1,4 +1,6 @@
-@media (max-width: 376px) {
+
+/*Phones*/
+/*@media (max-width: 480px) {
   .navlogo {
     margin: auto !important;
     padding:auto !important;
@@ -6,19 +8,30 @@
   .nav-container {
     margin-right:auto !important;
   }
+}*/
+/*Tablets*/
+@media (min-width: 480px) {
+  .nav-container {
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%;
+    background-color: white !important;
+    z-index: 500;
+  }
+  main {
+    margin-top: 60px;
+  }
 }
-
+/*computer*/
 @media (min-width: 768px) {
   .nav-container {
     flex-direction: row !important;
-    
   }
   .navitem-container {
     flex-direction: row !important;
     
   }
 }
-@media (min-width: 768px) { }
 
 html main body header {
   overflow: auto;
@@ -30,7 +43,7 @@ a {
 }
 
 p {
-  font-size: 10px;
+  font-size: 16px;
 }
 
 ul {
