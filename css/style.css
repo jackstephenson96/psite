@@ -1,37 +1,47 @@
 
-/*Phones*/
-/*@media (max-width: 480px) {
-  .navlogo {
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+/*  .navlogo {
     margin: auto !important;
     padding:auto !important;
   }
   .nav-container {
     margin-right:auto !important;
   }
-}*/
-/*Tablets*/
-@media (min-width: 480px) {
+*/
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
   .nav-container {
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%;
     background-color: white !important;
     z-index: 500;
+    flex-direction: row !important;
+  }
+  .navitem-container {
+    flex-direction: row !important;  
   }
   main {
     margin-top: 60px;
   }
-}
-/*computer*/
-@media (min-width: 768px) {
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
   .nav-container {
-    flex-direction: row !important;
+    position: absolute;
+    top: auto;
+    z-index: 0;
   }
-  .navitem-container {
-    flex-direction: row !important;
-    
-  }
-}
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/*@media only screen and (min-width: 1200px) {...}*/
+
+
 
 html main body header {
   overflow: auto;
