@@ -1,49 +1,4 @@
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-/*  .navlogo {
-    margin: auto !important;
-    padding:auto !important;
-  }
-  */
-  .navlogo {
-    white-space: nowrap;
-    text-align: center;
-  }
-
-} 
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  .nav-container {
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%;
-    background-color: white !important;
-    z-index: 500;
-    flex-direction: row !important;
-  }
-  .navitem-container {
-    flex-direction: row !important;  
-  }
-  main {
-    margin-top: 60px;
-  }
-} 
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  .nav-container {
-    position: absolute;
-    top: auto;
-    z-index: 0;
-  }
-} 
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-/*@media only screen and (min-width: 1200px) {...}*/
-
-
 
 html main body header {
   overflow: auto;
@@ -145,7 +100,7 @@ ul {
 }
 
 .project-image {
-    max-height: 400px;
+    max-height: 200px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -235,3 +190,50 @@ a.skip:focus {
 	width: auto;
 	height: auto;
 }
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+/*  .navlogo {
+    margin: auto !important;
+    padding:auto !important;
+  }
+  */
+  .navlogo {
+    white-space: nowrap;
+    text-align: center;
+  }
+
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .nav-container {
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%;
+    background-color: white !important;
+    z-index: 500;
+    flex-direction: row !important;
+  }
+  .navitem-container {
+    flex-direction: row !important;  
+  }
+  main {
+    margin-top: 60px;
+  }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .nav-container {
+    position: absolute;
+    top: auto;
+    z-index: 0;
+  }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/*@media only screen and (min-width: 1200px) {...}*/
+
