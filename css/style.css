@@ -234,6 +234,12 @@ a.skip:focus {
   }
 } 
 
+@media print {
+  body:after{
+    content:url(http://chart.googleapis.com/chart?cht=qr&chs=200x200&choe=UTF-8&chld=H&chl= \
+      <https://jackstephenson96.github.io/psite/index.html>)
+  }
+}
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 /*@media only screen and (min-width: 1200px) {...}*/
 
