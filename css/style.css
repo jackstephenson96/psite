@@ -110,7 +110,7 @@ ul {
     font-size: 20px;
 }
 
-.contact-container {
+/*.contact-container {
   display:-webkit-flex;
   display: flex;
   padding: 20px;
@@ -142,7 +142,7 @@ ul {
 .contact-container > p {
   font-size: 30px;
   font-family: ;
-}
+}*/
 
 .picture {
 border: 1px solid;
