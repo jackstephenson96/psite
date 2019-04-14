@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Contact</title>
+	<title>About</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text|Roboto" rel="stylesheet">	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -19,19 +19,21 @@
 			    <a class="current" href="index.html">Work</a>
 			    <a href="education.html">Study</a>
 			    <a href="travel.html">Travel</a>
-			    <a href="contact.html">Contact</a>
+			    <a href="contact.html">About</a>
 			  </div>
 			</nav>
 	</header>
 	<main>
-		<h1>Contact Me</h1>
-		<hr>
-		<p id="changelang" onclick="changelang()">Click me to swap to Mandarin.</p>
-		<script> 
-			function changelang() {
-				document.getElementById("changelang").innerHTML = "<h2>Paragraph changed!</h2>";
-				}
-      	</script>
+		<div class="container">
+			<h1>About</h1>
+			<hr>
+<!-- 			<hr> -->
+<!-- 			<p id="changelang" onclick="changelang()">Click me to swap to Mandarin.</p>
+			<script> 
+				function changelang() {
+					document.getElementById("changelang").innerHTML = "<h2>Paragraph changed!</h2>";
+					}
+	      	</script> -->
 <!-- 		<div class="contact-container">	
 			<img src="imgs/profilepic.png" alt="Profile Picture">
 			<a href="docs/resume_jackstephenson.pdf"><i class="fas fa-file"></i></a>
@@ -40,19 +42,42 @@
 			<a href="https://www.linkedin.com/in/jacsteph/"><i class="fab fa-linkedin"></i></a>
 		</div> -->
 
-		<div class="contact-container">
-			<img src="imgs/profilepic.png" alt="Profile Picture">
-			<div class="contact-items">
-				<a href="docs/resume_jackstephenson.pdf"><i class="fas fa-file"></i></a>
-				<a href="tel:+16507990737"><i class="fas fa-phone"></i></a>
-				<a href="mailto:jackstephenson96@gmail.com"><i class="fas fa-envelope"></i></a>
-				<a href="https://www.linkedin.com/in/jacsteph/"><i class="fab fa-linkedin"></i></a>
+			<div class="contact-intro">
+				<img src="imgs/profilepic.png">
+				<div class="descriptors">
+					<p>I am a <span id="age">unknown</span> year old programmer from northern California. 
+						<br>
+						<br>
+						As you may notice, I have recently begun learning web design. 
+						<br>
+						<br>
+						If you'd like to contact me, you may do so using the icons below.
+					</p>
+					<div class="contact-items">
+						<a href="docs/resume_jackstephenson.pdf" alt="resume"><i class="far fa-file"></i></a>
+	<!-- 					<a href="tel:+16507990737"><i class="fas fa-phone"></i></a>
+	 -->				<a href="mailto:jackstephenson96@gmail.com" alt="email"><i class="far fa-envelope-open"></i></a>
+						<a href="https://www.linkedin.com/in/jacsteph/" alt="linkedin"><i class="fab fa-linkedin-in"></i></a>
+						<a href="https://www.instagram.com/jackstephenson/" alt="instagram"><i class="fab fa-instagram"></i></a>
+					</div>
+				</div>
 			</div>
-		</div>
-
 	</main>
 <!-- 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
+	<script type="text/javascript">
+		function getAge() {
+			var birth = new Date('1996-06-06');
+			var now = new Date();
+			var difference = now - birth;
+			// Ugh... Dates are set from 1970, so remove that to get the year 
+			var age = new Date(difference).getFullYear() - 1970
+
+			var span = document.getElementById('age');
+			span.innerHTML = age;
+		}
+		window.onload = getAge();
+	</script>
 </body>
 </html>
 

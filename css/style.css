@@ -15,7 +15,13 @@ p {
 
 ul {
   list-style-type: none;
+  margin-block-start: initial;
+  margin-block-end: initial;
+  margin-inline-start: initial;
+  margin-inline-end: initial;
+  padding-inline-start: initial;
 }
+
 
 img {
     display: block;
@@ -26,9 +32,9 @@ img {
 
 h1 {
   display: block;
-  color: Black;
-  font-weight: bold;
-  font-family: 'Roboto', sans-serif; 
+  color: #000000;
+/*  font-weight: bold;
+  font-family: 'Roboto', sans-serif; */
 
 }
 
@@ -110,11 +116,38 @@ ul {
     font-size: 20px;
 }
 
+.contact-intro {
+  display:grid;
+  grid-template-columns: 300px 1fr;
+}
+.contact-intro p {
+  padding: 30px;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;  
+  vertical-align: middle;
+  text-align: center;
+}
+
+.contact-intro img {
+  max-width: 300px; 
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 30px;
+
+}
+
 /*.contact-container {
   display:-webkit-flex;
   display: flex;
   padding: 20px;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
 
 }
@@ -129,19 +162,18 @@ ul {
   width: auto;
   font-family: 'Roboto', sans-serif;  
 }
-.contact-container:img {
-  color: black;
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 20px;
-  text-decoration: none;
-  font-size: 30px;
-  height:150px;
+.contact-container > img {*/
+
+/*  color: black;
+  background-color: rgba(255, 255, 255, 0.8);*/
+/*  padding: 20px;
+  text-decoration: none;*/
+/*  font-size: 30px;
   width: auto;
-  font-family: 'Roboto', sans-serif; 
+  font-family: 'Roboto', sans-serif; */
 }
-.contact-container > p {
+/*.contact-container > p {
   font-size: 30px;
-  font-family: ;
 }*/
 
 .picture {
@@ -159,7 +191,7 @@ height:200px;
 .gallery-container {
   display:-webkit-flex;
   display: flex;
-  padding: 30px;
+  padding: 20px;
   flex-direction: row;
   flex-wrap: wrap;
 }
@@ -204,6 +236,11 @@ a.skip:focus {
     white-space: nowrap;
     text-align: center;
   }
+  .contact-intro {
+    grid-template-columns: initial;
+    grid-template-rows: 300px 1fr;
+  }
+
 
 } 
 
