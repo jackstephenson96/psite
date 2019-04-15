@@ -57,6 +57,17 @@
 <!-- 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
 	<script type="text/javascript">
+		function initializeMobileNav(){
+			if (screen.width < 600){
+				var x = document.getElementsByClassName("navlogo")[0].parentElement;
+				if (x.className === "nav-container") {
+					x.className += "-responsive"
+				}
+			}
+		}
+		window.onload = initializeMobileNav();
+
+
 		function getAge() {
 			var birth = new Date('1996-06-06');
 			var now = new Date();
@@ -72,15 +83,15 @@
 		/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 		function mobileNav() {
 		    if (screen.width < 600) {
-		    	
+
 				var x = document.getElementsByClassName("navlogo")[0].parentElement;
-			    console.log(x)
+			    console.log(x);
 			    if (x.className === "nav-container") {
 			        x.className += "-responsive";
-			        console.log("show")
+			        console.log("show");
 			    } else {
 			        x.className = "nav-container";
-			        console.log("hide")
+			        console.log("hide");
 			    }
 			}
 		}
