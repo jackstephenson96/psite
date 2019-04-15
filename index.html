@@ -7,6 +7,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text|Roboto" rel="stylesheet">	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	<link rel="icon" src="imgs/favicon.png">
+	<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 	<header>
@@ -14,19 +16,24 @@
 		<a class="skip" target="_blank" href="#main">Skip to content</a>
 		</div>
 			<nav class="nav-container">
-			  <a class="navlogo">Jack Stephenson</a>
-			  <div class="navitem-container">
+			  	<a href="javascript:void(0);" class="navlogo" onclick="mobileNav()">Jack Stephenson</a>
+			  	<!-- <div class="navitem-container"> -->
 			  	<a class="current" href="index.html">About</a>
 			    <a href="projects.html">Work</a>
 			    <a href="education.html">Study</a>
 			    <a href="travel.html">Travel</a>
-			  </div>
+<!-- 				    <a href="javascript:void(0);" class="icon" onclick="mobileNav()">
+    					<i class="fa fa-bars"></i>
+  					</a> -->
+	<!-- 		  	</div> -->
 			</nav>
 	</header>
 	<main>
 		<div class="container">
-			<h1>About</h1>
-			<hr>
+			<div class="page-title">
+				<h1>About</h1>
+				<hr>
+			</div>
 			<div class="contact-intro">
 				<img src="imgs/profilepic.png">
 				<div class="descriptors">
@@ -61,6 +68,22 @@
 			span.innerHTML = age;
 		}
 		window.onload = getAge();
+
+		/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+		function mobileNav() {
+		    if (screen.width < 600) {
+		    	
+				var x = document.getElementsByClassName("navlogo")[0].parentElement;
+			    console.log(x)
+			    if (x.className === "nav-container") {
+			        x.className += "-responsive";
+			        console.log("show")
+			    } else {
+			        x.className = "nav-container";
+			        console.log("hide")
+			    }
+			}
+		}
 	</script>
 </body>
 </html>

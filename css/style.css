@@ -47,7 +47,7 @@ h2 {
   font-family: 'Roboto', sans-serif !important;  
 
 }
-.nav-container {
+.nav-container{
   display:-webkit-flex;
   display: flex;
   flex-direction: column;
@@ -55,13 +55,15 @@ h2 {
   margin-right: auto;
   justify-content: space-between;
 }
-.navitem-container {
+
+.nav-container a:not(.navlogo) {
   display:-webkit-flex;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
 .navlogo {
+  background-color: white !important;
   font-size:36px;
   padding:10px;
   margin-left:15px;
@@ -69,7 +71,7 @@ h2 {
   font-family: 'Libre Barcode 39 Text';
 }
 
-.navitem-container a{
+.nav-container a:not(.navlogo){
   display:block;
   margin: 5px;
   padding:15px;
@@ -79,10 +81,9 @@ h2 {
   font-family: 'Roboto', sans-serif;
 }
 
-.navitem-container a:hover, a:active, a:focus{
+.nav-container a:hover, a:active, a:focus{
   background-color: #eee;
 }
-
 
 ul {
   list-style-type: none;
@@ -298,15 +299,29 @@ a.skip:focus {
   }
   */
   .navlogo {
+    display:block;
     white-space: nowrap;
     text-align: center;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
   .contact-intro {
     grid-template-columns: initial;
     grid-template-rows: 300px 1fr;
   }
+  .nav-container a:not(.navlogo) {
+    display: block !important;
+  }
+  .nav-container-responsive {
+    font-size: 20px;
+    color: black !important;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+  }
+  .nav-container-responsive a:not(.navlogo){
+    display:none;
 
-
+  }
 } 
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -319,7 +334,7 @@ a.skip:focus {
     z-index: 500;
     flex-direction: row !important;
   }
-  .navitem-container {
+  .nav-container a:not(.navlogo) {
     flex-direction: row !important;  
   }
   main {

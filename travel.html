@@ -14,7 +14,7 @@
 		<a class="skip" target="_blank" href="#main">Skip to content</a>
 		</div>
 			<nav class="nav-container">
-			  <a class="navlogo">Jack Stephenson</a>
+			  <a href="javascript:void(0);" class="navlogo" onclick="mobileNav()">Jack Stephenson</a>
 			  <div class="navitem-container">
 			  	<a href="index.html">About</a>
 			    <a href="projects.html">Work</a>
@@ -26,8 +26,10 @@
 	</header>
 	<main>	
 		<div class="container">
-			<h1>Travel</h1>
-			<hr>
+		    <div class="page-title">
+				<h1>Travel</h1>
+				<hr>
+			</div>
 			<div class="gallery-container">
 	    		<img src="cropimgs/hongkong.png" alt="Hong Kong">
 	    		<img src="cropimgs/shanghai.png" alt="Shanghai">
@@ -40,6 +42,22 @@
 				<img src="cropimgs/egypt.png" alt="Egypt">
 			</div>
 		</div>
+	<script type="text/javascript">
+		function mobileNav() {
+		    if (screen.width < 600) {
+		    	
+				var x = document.getElementsByClassName("navlogo")[0].parentElement;
+			    console.log(x)
+			    if (x.className === "nav-container") {
+			        x.className += "-responsive";
+			        console.log("show")
+			    } else {
+			        x.className = "nav-container";
+			        console.log("hide")
+			    }
+			}
+		}
+	</script>
 	</main>
 <!--   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
