@@ -1,101 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Projects</title>
-   <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>About</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="shortcut icon" src="imgs/favicon.png"/>
+	<link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text|Roboto" rel="stylesheet">	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="icon" src="imgs/favicon.png">
 </head>
 <body>
 	<header>
 		<div>
 		<a class="skip" target="_blank" href="#main">Skip to content</a>
 		</div>
-         <nav class="nav-container">
-           <a class="navlogo">Jack Stephenson</a>
-           <div class="navitem-container">
-             <a class="current" href="index.html">Work</a>
-             <a href="education.html">Study</a>
-             <a href="travel.html">Travel</a>
-             <a href="about.html">About</a>
-           </div>
-         </nav>
+			<nav class="nav-container">
+			  <a class="navlogo">Jack Stephenson</a>
+			  <div class="navitem-container">
+			  	<a class="current" href="index.html">About</a>
+			    <a href="projects.html">Work</a>
+			    <a href="education.html">Study</a>
+			    <a href="travel.html">Travel</a>
+			  </div>
+			</nav>
 	</header>
-	<main>	
+	<main>
 		<div class="container">
-         <h1>Projects</h1>
-         <hr>
-         <div class="project">
-            <div class="row project-title-row">
-               <div class="col-md-12 col-sm-12">
-                  <div class="project-title"> <a href="#" target="_blank">Trending</a> </div>
-                  <div class="project-date"> Fall 2018 </div>
-               </div>
-            </div>
-            <div class="row project-desc">
-               <div class="col-md-9">
-                  <p>An Alexa Skill to query trending google searches around the globe.</p>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-md-12"> <a href="#" target="_blank"> <img class="project-image" src="imgs/trending.png"></a></div>
-            </div>
-            <div class="project-labels">
-               <div class="label label-default">AWS</div>
-               <div class="label label-default">Python</div>
-            </div>
-         </div>
-         <hr>
-         <div class="project">
-            <div class="row project-title-row">
-               <div class="col-md-12 col-sm-12">
-                  <div class="project-title"> <a href="#" target="_blank">Flightplotter</a> </div>
-                  <div class="project-date"> Fall 2018 </div>
-               </div>
-            </div>
-            <div class="row project-desc">
-               <div class="col-md-9">
-                  <p>Python script that scrapes google calendar for flight info and plots.</p>
-               </div>
-               <div class="col-md-3 col-sm-3 col-xs-4 pull-right text-center"><a href="#" class="fa fa-github" aria-hidden="true"></a></div>
-            </div>
-            <div class="row">
-               <div class="col-md-12"> <a href="#" target="_blank"> <img class="project-image" src="imgs/flightplotter.png"> </a> </div>
-            </div>
-            <div class="project-labels">
-               <div class="label label-default">Python</div>
-               <div class="label label-default">GeoPlotLib</div>
-            </div>
-         </div>
-         <hr>
-          <div class="project">
-            <div class="row project-title-row">
-               <div class="col-md-12 col-sm-12">
-                  <div class="project-title"> <a href="#" target="_blank">Stockbot</a> </div>
-                  <div class="project-date"> Fall 2017 </div>
-               </div>
-            </div>
-            <div class="row project-desc">
-               <div class="col-md-9">
-                  <p>Groupme bot that provides real-time stock and currency information.</p>
-               </div>
-               <div class="col-md-3 col-sm-3 col-xs-4 pull-right text-center"><a href="#" class="fa fa-github" aria-hidden="true"></a></div>
-            </div>
-            <div class="row">
-               <div class="col-md-12"> <a href="#" target="_blank"> <img class="project-image" src="imgs/stockbot.png"> </a> </div>
-            </div>
-            <div class="project-labels">
-               <div class="label label-default">Python</div>
-               <div class="label label-default">Flask</div>
-               <div class="label label-default">Heroku</div>
-            </div>
-         </div>
-         <hr>
+			<h1>About</h1>
+			<hr>
+			<div class="contact-intro">
+				<img src="imgs/profilepic.png">
+				<div class="descriptors">
+					<p>I am a <span id="age">unknown</span> year old programmer from Northern California.
+						<br>
+						<br>
+						As you may have noticed, I recently began learning web design. 
+						<br>
+						<br>
+						If you'd like to contact me, use the icons below.
+					</p>
+					<div class="contact-items">
+						<a href="docs/resume_jackstephenson.pdf" alt="resume"><i class="far fa-file"></i></a>
+						<a href="mailto:jackstephenson96@gmail.com" alt="email"><i class="far fa-envelope-open"></i></a>
+						<a href="https://www.linkedin.com/in/jacsteph/" alt="linkedin"><i class="fab fa-linkedin-in"></i></a>
+						<a href="https://www.instagram.com/jackstephenson/" alt="instagram"><i class="fab fa-instagram"></i></a>
+					</div>
+				</div>
+			</div>
 	</main>
-<!--   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
+<!-- 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
+	<script type="text/javascript">
+		function getAge() {
+			var birth = new Date('1996-06-06');
+			var now = new Date();
+			var difference = now - birth;
+			// Ugh... Dates are set from 1970, so remove that to get the year 
+			var age = new Date(difference).getFullYear() - 1970
+
+			var span = document.getElementById('age');
+			span.innerHTML = age;
+		}
+		window.onload = getAge();
+	</script>
 </body>
 </html>
 
