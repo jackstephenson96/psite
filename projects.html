@@ -103,7 +103,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
 	  <script type="text/javascript">
 		function initializeMobileNav(){
-			if (screen.width < 600){
+			if (screen.width < 768){
 				var x = document.getElementsByClassName("navlogo")[0].parentElement;
 				if (x.className === "nav-container") {
 					x.className += "-responsive"
@@ -112,7 +112,7 @@
 		}
 		window.onload = initializeMobileNav();
 				function mobileNav() {
-						if (screen.width < 600) {
+						if (screen.width < 768) {
 					
 								var x = document.getElementsByClassName("navlogo")[0].parentElement;
 							  console.log(x)
