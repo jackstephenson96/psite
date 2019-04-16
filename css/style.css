@@ -56,6 +56,9 @@ h2 {
 /*  justify-content: space-between;
 */}
 
+.menu-icon {
+  display:none;
+}
 
 .navlogo {
   background-color: white !important;
@@ -315,7 +318,13 @@ a.skip:focus {
   }
   .nav-container-responsive a:not(.navlogo){
     display:none;
-
+  }
+  .menu-icon {
+    display:block !important;
+    position: fixed;
+    top: 5px;
+    left: -5px;
+    font-size: 45px;
   }
 } 
 
