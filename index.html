@@ -19,7 +19,8 @@
 				<div href="javascript:void(0);" class="menu-icon" onclick="mobileNav()">
     				<i class="fa fa-bars"></i>
   				</div>
-			  	<a class="navlogo">Jack Stephenson</a>
+<!-- 			  	<a class="navlogo">Jack Stephenson</a> -->
+				<a class="navlogo"></a>
 			  	<!-- <div class="navitem-container"> -->
 			  	<div id="spacer"></div>
 			  	<a class="current" href="index.html">About</a>
@@ -98,7 +99,7 @@
 			        console.log("hide");
 			    }
 			}
-		}
+		};
 		window.onorientationchange = function() { 
         	var orientation = window.orientation; 
             switch(orientation) { 
@@ -107,6 +108,22 @@
                 case -90: window.location.reload(); 
                 break; } 
     	};
+    	var i = 0;
+    	var speed = 30;
+		function typeWriter() {
+			console.log("typewriter")
+			var txt = "Jack Stephenson"
+			var navlogo = document.getElementsByClassName("navlogo")[0]
+			console.log(txt)
+
+		    if (i < txt.length) {
+		    	document.getElementsByClassName("navlogo")[0].innerHTML += txt.charAt(i);
+		    	i++;
+		    	setTimeout(typeWriter, speed);
+		  	}
+		};
+		window.onload = typeWriter();
+
 	</script>
 </body>
 </html>
