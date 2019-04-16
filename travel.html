@@ -32,68 +32,23 @@
 				<h1>Travel</h1>
 				<hr>
 			</div>
-			<div class="slideshow-container">
-				<div class="mySlides fade">
-					<div class="numbertext">1 / 9</div>
-	    			<img src="imgs/hongkong.png" alt="Hong Kong" style="width:100%">
-	    			<div class="text">Caption Text</div>
-	    		</div>
-	    		<div class="mySlides fade">
-					<div class="numbertext">2 / 9</div>
-	    			<img src="imgs/shanghai.png" alt="Shanghai" style="width:100%">
-	    			<div class="text">Caption Text</div>
-	    		</div>
-	    		<div class="mySlides fade">
-					<div class="numbertext">3 / 9</div>
-	    			<img src="imgs/xian-pic.png" alt="Xian" style="width:100%">
-	    			<div class="text">Caption Text</div>
-	    		</div>
-	    		<div class="mySlides fade">
-					<div class="numbertext">4 / 9</div>
-	    			<img src="imgs/guilin1.png" alt="Guilin" style="width:100%">
-	    			<div class="text">Caption Text</div>
-	    		</div>
-	    		<div class="mySlides fade">
-					<div class="numbertext">5 / 9</div>
-	    			<img src="imgs/shenzhen.png" alt="Shenzhen" style="width:100%">
-	    			<div class="text">Caption Text</div>
-	    		</div>
-	    		<div class="mySlides fade">
-					<div class="numbertext">6 / 9</div>
-	    			<img src="imgs/bali.png" alt="Bali" style="width:100%">
-	    			<div class="text">Caption Text</div>
-	    		</div>
-	    		<div class="mySlides fade">
-					<div class="numbertext">7 / 9</div>
-	    			<img src="imgs/fiji.png" alt="Fiji" style="width:100%">
-	    			<div class="text">Caption Text</div>
-	    		</div>	    		
-	    		<div class="mySlides fade">
-					<div class="numbertext">8 / 9</div>
-	    			<img src="imgs/mexico.png" alt="Mexico" style="width:100%">
-	    			<div class="text">Caption Text</div>
-	    		</div>	    		
-	    		<div class="mySlides fade">
-					<div class="numbertext">9 / 9</div>
-	    			<img src="imgs/egypt.png" alt="Egypt" style="width:100%">
-	    			<div class="text">Caption Text</div>
-	    		</div>	
-	    		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  				<a class="next" onclick="plusSlides(1)">&#10095;</a>
-			</div>
-			<br>    		
-			<div style="text-align:center">
-				<span class="dot" onclick="currentSlide(1)"></span> 
-				<span class="dot" onclick="currentSlide(2)"></span> 
-				<span class="dot" onclick="currentSlide(3)"></span> 
-				<span class="dot" onclick="currentSlide(4)"></span> 
-				<span class="dot" onclick="currentSlide(5)"></span> 
-				<span class="dot" onclick="currentSlide(6)"></span> 
-				<span class="dot" onclick="currentSlide(7)"></span> 
-				<span class="dot" onclick="currentSlide(8)"></span> 
-				<span class="dot" onclick="currentSlide(9)"></span> 
+			<div id="travel-intro">
+				<h3>I will soon be embarking on a trip around the world, here is my itinerary: </h3>
 			</div>
 		</div>
+			<iframe id="travelplan" src="https://www.google.com/maps/d/u/0/embed?mid=1AxhO7z-NijQH3XvEY7hDllm11gFu_7G3" width="640" height="480"></iframe>
+<!-- 			<div class="gallery-container">
+	    		<img src="cropimgs/hongkong.png" alt="Hong Kong">
+	    		<img src="cropimgs/shanghai.png" alt="Shanghai">
+	    		<img src="cropimgs/xian-pic.png" alt="Xian">
+	    		<img src="cropimgs/guilin1.png" alt="Guilin">
+	    		<img src="cropimgs/shenzhen.png" alt="Shenzhen">
+	  			<img src="cropimgs/bali.png" alt="Bali">
+				<img src="cropimgs/fiji.png" alt="Fiji">
+				<img src="cropimgs/mexico.png" alt="Mexico">
+				<img src="cropimgs/egypt.png" alt="Egypt">
+			</div> -->
+
 	<script type="text/javascript">
 		function initializeMobileNav(){
 			if (screen.width < 768){
@@ -126,34 +81,6 @@
                 case -90: window.location.reload(); 
                 break; } 
     	};
-		var slideIndex = 1;
-		showSlides(slideIndex);
-
-		// Next/previous controls
-		function plusSlides(n) {
-			showSlides(slideIndex += n);
-		}
-
-		// Thumbnail image controls
-		function currentSlide(n) {
-			showSlides(slideIndex = n);
-		}
-
-		function showSlides(n) {
-			var i;
-			var slides = document.getElementsByClassName("mySlides");
-			var dots = document.getElementsByClassName("dot");
-			if (n > slides.length) {slideIndex = 1} 
-			if (n < 1) {slideIndex = slides.length}
-			for (i = 0; i < slides.length; i++) {
-		    	slides[i].style.display = "none"; 
-		  	}
-			for (i = 0; i < dots.length; i++) {
-		    	dots[i].className = dots[i].className.replace(" active", "");
-			}
-			slides[slideIndex-1].style.display = "block"; 
-			dots[slideIndex-1].className += " active";
-			}
 	</script>
 	</main>
 <!--   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
