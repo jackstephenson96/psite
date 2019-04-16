@@ -9,6 +9,7 @@
 	<link rel="icon" src="imgs/favicon.png">
 	<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/hanzi-writer@1.3/dist/hanzi-writer.min.js"></script>
 </head>
 <body>
 	<header>
@@ -20,7 +21,7 @@
     				<i class="fa fa-bars"></i>
   				</div>
 <!-- 			  	<a class="navlogo">Jack Stephenson</a> -->
-				<a class="navlogo"></a>
+				<a id="navlogo" class="navlogo"></a>
 			  	<!-- <div class="navitem-container"> -->
 			  	<div id="spacer"></div>
 			  	<a class="current" href="index.html">About</a>
@@ -110,19 +111,49 @@
     	};
     	var i = 0;
     	var speed = 30;
-		function typeWriter() {
+		function typeWriter(lang) {
 			console.log("typewriter")
-			var txt = "Jack Stephenson"
-			var navlogo = document.getElementsByClassName("navlogo")[0]
-			console.log(txt)
+			// if (lang=="english") {
+			var txt = "Jack Stephenson";
+			var navlogo = document.getElementsByClassName("navlogo")[0];
+			console.log(txt);
 
 		    if (i < txt.length) {
 		    	document.getElementsByClassName("navlogo")[0].innerHTML += txt.charAt(i);
 		    	i++;
 		    	setTimeout(typeWriter, speed);
-		  	}
+	  		}
+			// }
+			// else if (lang=="chinese"){ 
+			// 	var navlogo = document.getElementById("navlogo");
+
+			// 	// var navlogo2 = document.createElement("a");
+			// 	// navlogo2.className = "navlogo";
+			// 	// navlogo2.id = "navlogo2";
+			// 	// navlogo.parentNode.insertBefore(navlogo2, navlogo.nextSibling);
+
+			// 	// var navlogo3 = document.createElement("a");
+			// 	// navlogo3.className = "navlogo";
+			// 	// navlogo3.id = "navlogo3";
+			// 	// navlogo2.parentNode.insertBefore(navlogo3, navlogo2.nextSibling)
+
+			// }	
 		};
 		window.onload = typeWriter();
+	// function writeHanzi(hanzi) {
+	// 	var navlogo = document.getElementById("navlogo")
+	// 	var char = HanziWriter.create('navlogo', hanzi, {
+	// 		width: 100,
+	// 		height: 100,
+	// 		padding: 5,
+	// 		showOutline: false,
+	// 		strokeAnimationSpeed: 5, // 5x normal speed
+	// 		delayBetweenStrokes: 10, // milliseconds
+	// 		radicalColor: '#337ab7' // blue
+	// 	})
+	// 	char.animateCharacter();
+	// 	//https://chanind.github.io/hanzi-writer/docs.html
+	// }
 
 	</script>
 </body>
