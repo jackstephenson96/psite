@@ -1,0 +1,5 @@
+:root { --bg:#fff; --fg:#111; --link:#0a66c2; }
+[data-theme="dark"] { --bg:#0b0c10; --fg:#e7e7e7; --link:#8ab4f8; }
+
+html,body { background:var(--bg); color:var(--fg); }
+a { color:var(--link); }
