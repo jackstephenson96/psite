@@ -33,3 +33,145 @@
 
 	<script src="https://cdn.jsdelivr.net/npm/hanzi-writer@1.3/dist/hanzi-writer.min.js"></script>
 </head>
+<body>
+	<header>
+		<div>
+		<a class="skip-main" href="#main">Skip to content</a>
+		</div>
+			<nav class="nav-container">
+				<div href="javascript:void(0);" class="menu-icon" onclick="mobileNav()">
+    				<i class="fa fa-bars"></i>
+  				</div>
+<!-- 			  	<a class="navlogo">Jack Stephenson</a> -->
+				<a id="navlogo" class="navlogo"></a>
+			  	<!-- <div class="navitem-container"> -->
+			  	<div id="spacer"></div>
+			  	<a class="current" href="index.html">About</a>
+			    <a href="projects.html">Projects</a>
+			    <a href="education.html">Study</a>
+			    <a href="travel.html">Travel</a>
+<!-- 				    <a href="javascript:void(0);" class="icon" onclick="mobileNav()">
+    					<i class="fa fa-bars"></i>
+  					</a> -->
+	<!-- 		  	</div> -->
+			</nav>
+	</header>
+	<main>
+		<div id="main" class="container">
+			<div class="page-title">
+				<h1>About</h1>
+				<hr>
+			</div>
+			<div class="contact-intro">
+				<img src="imgs/profilepic.png" alt="my face">
+				<div class="descriptors">
+					<p>I am a <span id="age">unknown</span> year old programmer from Northern California, currently in Austin, TX.
+					</p>
+					<div class="contact-items">
+						<a href="docs/resume_jackstephenson.pdf" alt="resume"><span class="link-text">Resume</span><i class="far fa-file" alt="file icon"></i></a>
+						<a href="mailto:jackstephenson96@gmail.com" alt="email"><span class="link-text">Email</span><i class="far fa-envelope-open" alt="mail icon"></i></a>
+						<a href="https://www.linkedin.com/in/jacsteph/" alt="linkedin"><span class="link-text">LinkedIn</span><i class="fab fa-linkedin-in" alt="linkedin icon"></i></a>
+						<a href="https://github.com/jackstephenson96" alt="github"><span class="link-text">GitHub</span><i class="fab fa-github"></i></a>
+						<a href="https://www.instagram.com/jackstephenson/" alt="instagram"><span class="link-text">Instagram</span><i class="fab fa-instagram" alt="instagram icon"></i></a>
+					</div>
+				</div>
+			</div>
+	</main>
+<!-- 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
+	<script type="text/javascript">
+		function initializeMobileNav(){
+			if (screen.width < 768){
+				var x = document.getElementsByClassName("navlogo")[0].parentElement;
+				if (x.className === "nav-container") {
+					x.className += "-responsive"
+				}
+			}
+		}
+		window.onload = initializeMobileNav();
+
+
+		function getAge() {
+			var birth = new Date('1996-06-06');
+			var now = new Date();
+			var difference = now - birth;
+			// Ugh... Dates are set from 1970, so remove that to get the year 
+			var age = new Date(difference).getFullYear() - 1970
+
+			var span = document.getElementById('age');
+			span.innerHTML = age;
+		}
+		window.onload = getAge();
+
+		/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+		function mobileNav() {
+		    if (screen.width < 768) {
+
+				var x = document.getElementsByClassName("navlogo")[0].parentElement;
+			    console.log(x);
+			    if (x.className === "nav-container") {
+			        x.className += "-responsive";
+			        console.log("show");
+			    } else {
+			        x.className = "nav-container";
+			        console.log("hide");
+			    }
+			}
+		};
+		window.onorientationchange = function() { 
+        	var orientation = window.orientation; 
+            switch(orientation) { 
+                case 0:
+                case 90:
+                case -90: window.location.reload(); 
+                break; } 
+    	};
+    	var i = 0;
+    	var speed = 50;
+		function typeWriter(lang) {
+			console.log("typewriter")
+			// if (lang=="english") {
+			var txt = "Jack Stephenson";
+			var navlogo = document.getElementsByClassName("navlogo")[0];
+			console.log(txt);
+
+		    if (i < txt.length) {
+		    	document.getElementsByClassName("navlogo")[0].innerHTML += txt.charAt(i);
+		    	i++;
+		    	setTimeout(typeWriter, speed);
+	  		}
+			// }
+			// else if (lang=="chinese"){ 
+			// 	var navlogo = document.getElementById("navlogo");
+
+			// 	// var navlogo2 = document.createElement("a");
+			// 	// navlogo2.className = "navlogo";
+			// 	// navlogo2.id = "navlogo2";
+			// 	// navlogo.parentNode.insertBefore(navlogo2, navlogo.nextSibling);
+
+			// 	// var navlogo3 = document.createElement("a");
+			// 	// navlogo3.className = "navlogo";
+			// 	// navlogo3.id = "navlogo3";
+			// 	// navlogo2.parentNode.insertBefore(navlogo3, navlogo2.nextSibling)
+
+			// }	
+		};
+		window.onload = typeWriter();
+	// function writeHanzi(hanzi) {
+	// 	var navlogo = document.getElementById("navlogo")
+	// 	var char = HanziWriter.create('navlogo', hanzi, {
+	// 		width: 100,
+	// 		height: 100,
+	// 		padding: 5,
+	// 		showOutline: false,
+	// 		strokeAnimationSpeed: 5, // 5x normal speed
+	// 		delayBetweenStrokes: 10, // milliseconds
+	// 		radicalColor: '#337ab7' // blue
+	// 	})
+	// 	char.animateCharacter();
+	// 	//https://chanind.github.io/hanzi-writer/docs.html
+	// }
+
+	</script>
+</body>
+</html>
